@@ -16,7 +16,6 @@ public:
         }
 
         for(int i = 2; i < s.size(); i++) {
-
             for(int j = 0; j + i < s.size(); j++) {
                 table[j][j + i] = (s[j] == s[j + i] && table[j + 1][j + i - 1]);
             }
